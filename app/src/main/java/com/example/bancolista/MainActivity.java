@@ -32,11 +32,10 @@ public class MainActivity extends AppCompatActivity {
         String login = edLogin.getText().toString();
         String senha = edSenha.getText().toString();
 
-        //TODO: Obter do SQLite
-        String loginArmazenado = "login";
-        String senhaArmazenada = "senha";
+        //Obter do SQLite
+        Usuario usuario = new UsuariosDAO(getApplicationContext()).get(login);
 
-        if (login.equals(loginArmazenado) && senha.equals(senhaArmazenada)) {
+        if (usuario != null && usuario.Senha.equals(senha)) {
             Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
             startActivity(intent);
         } else {

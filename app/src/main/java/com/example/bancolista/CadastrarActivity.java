@@ -50,7 +50,8 @@ public class CadastrarActivity extends AppCompatActivity {
     }
 
     private void salvarUsuario(String login, String senha) {
-        //TODO: Cadastrar usuário
-
+        //Cadastrar usuário
+        Usuario usuario = new Usuario(login, senha);
+        new UsuariosDAO(getApplicationContext()).insert(usuario);
     }
 }
