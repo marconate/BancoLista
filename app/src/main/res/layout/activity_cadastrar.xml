@@ -4,61 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CadastrarActivity">
 
     <EditText
-        android:id="@+id/edLogin"
+        android:id="@+id/edLoginCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
-        android:hint="Login"
+        android:hint="Informe login"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/edSenha"
+        android:id="@+id/edConfirmaSenhaCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
-        android:hint="Senha"
+        android:hint="Confirme a senha"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/edSenhaCadastro" />
 
     <Button
-        android:id="@+id/btEntrar"
-        android:layout_width="213dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="20dp"
-        android:onClick="onClickEntrar"
-        android:text="Entrar"
+        android:id="@+id/buttonCadastro"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:onClick="onClickSalvar"
+        android:text="Salvar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/edConfirmaSenhaCadastro" />
 
-    <Button
-        android:id="@+id/btCadstrar"
-        android:layout_width="211dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="24dp"
-        android:onClick="onClickCadastrar"
-        android:text="Cadastrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btEntrar" />
-
-    <TextView
-        android:id="@+id/textView"
+    <EditText
+        android:id="@+id/edSenhaCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="Banco Lista"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Informe a senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edLoginCadastro" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Cadastrar Usuário"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
